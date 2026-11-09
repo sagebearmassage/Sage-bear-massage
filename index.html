@@ -35,7 +35,7 @@
       <div class="hero-copy">
         <h1 id="hero-title">Private massage in your own home.</h1>
         <p>Sage provides private, in-home massage throughout Santa Barbara, Montecito, and Goleta. He brings everything needed for the session. Before he begins, you can tell him what has been feeling tight, sore, overworked, or simply in need of attention. He listens, and the work takes shape from there.</p>
-        <a class="primary-action" href="#schedule">Talk with Sage</a>
+        <a class="primary-action" href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" target="_blank" rel="noopener" data-open-scheduler>Talk with Sage</a>
         <span class="location">Santa Barbara · Montecito · Goleta</span>
       </div>
     </section>
@@ -60,13 +60,13 @@
           <h3>60 minutes</h3>
           <p class="session-price">$120</p>
           <p>Enough time for a full-body massage or more focused work on one or two areas.</p>
-          <a href="#schedule">Talk with Sage</a>
+          <a href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" target="_blank" rel="noopener" data-open-scheduler>Talk with Sage</a>
         </article>
         <article>
           <h3>90 minutes</h3>
           <p class="session-price">$175</p>
           <p>More room to work slowly, spend time on several areas, or support recovery after training and activity.</p>
-          <a href="#schedule">Talk with Sage</a>
+          <a href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" target="_blank" rel="noopener" data-open-scheduler>Talk with Sage</a>
         </article>
       </div>
 
@@ -137,7 +137,6 @@
     </section>
 
     <section class="schedule" id="schedule" aria-labelledby="schedule-title">
-      <img class="section-plant schedule-plant" src="book-botanical.png" alt="" aria-hidden="true">
       <h2 id="schedule-title">Talk with Sage and schedule your session.</h2>
       <div class="schedule-copy">
         <p>Choose a time for a phone or video conversation with Sage. You can share what you’re looking for, ask questions, and talk through whether a 60- or 90-minute in-home massage session is the right fit.</p>
@@ -146,6 +145,7 @@
           <li>Private, in-home massage in Santa Barbara, Montecito, and Goleta</li>
           <li>60 minutes — $120 · 90 minutes — $175</li>
         </ul>
+        <a class="primary-action schedule-action" href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" target="_blank" rel="noopener" data-open-scheduler>Book an appointment</a>
         <div class="google-schedule-button">
           <script>
             (function () {
@@ -160,10 +160,13 @@
               });
             })();
           </script>
-          <noscript><a href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" class="primary-action">Book an appointment</a></noscript>
         </div>
       </div>
     </section>
+
+    <div class="botanical-footer" aria-hidden="true">
+      <img src="book-botanical.png" alt="">
+    </div>
   </main>
 
   <footer>
@@ -173,5 +176,18 @@
     </div>
     <span>Santa Barbara · Montecito · Goleta</span>
   </footer>
+  <script>
+    window.addEventListener('load', function () {
+      document.querySelectorAll('[data-open-scheduler]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          var popupButton = document.querySelector('.google-schedule-button button');
+          if (popupButton) {
+            event.preventDefault();
+            popupButton.click();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
