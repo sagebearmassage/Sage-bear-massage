@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sage Bear Massage | Mobile Massage in Santa Barbara</title>
-  <meta name="description" content="Private, in-home massage in Santa Barbara with Sage Bear Rechenbach. Deep tissue, Swedish massage, sports massage, cupping, and scraping may be included within a session.">
+  <title>Sage Bear Massage | Mobile Massage in Santa Barbara, Montecito &amp; Goleta</title>
+  <meta name="description" content="Private, in-home massage in Santa Barbara, Montecito, and Goleta with Sage Bear Rechenbach. Deep tissue, Swedish massage, sports massage, cupping, and scraping may be included within a session.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +23,7 @@
     <nav aria-label="Primary navigation">
       <a href="#sessions">Sessions</a>
       <a href="#sage">About Sage</a>
-      <a href="#book">Book</a>
+      <a href="#schedule">Schedule</a>
     </nav>
   </header>
 
@@ -32,9 +34,9 @@
       <img class="hero-plant hero-plant--right" src="terrarium-right.png" alt="" aria-hidden="true">
       <div class="hero-copy">
         <h1 id="hero-title">Private massage in your own home.</h1>
-        <p>Sage works throughout Santa Barbara and brings everything he needs for the session. Before he begins, you can tell him what has been feeling tight, sore, overworked, or simply in need of attention. He listens, and the work takes shape from there.</p>
-        <a class="primary-action" href="#book">Book a massage</a>
-        <span class="location">Santa Barbara, California</span>
+        <p>Sage serves Santa Barbara, Montecito, and Goleta and brings everything he needs for the session. Before he begins, you can tell him what has been feeling tight, sore, overworked, or simply in need of attention. He listens, and the work takes shape from there.</p>
+        <a class="primary-action" href="#schedule">Talk with Sage</a>
+        <span class="location">Santa Barbara · Montecito · Goleta</span>
       </div>
     </section>
 
@@ -50,7 +52,7 @@
       <img class="section-plant section-plant--sessions" src="terrarium-left.png" alt="" aria-hidden="true">
       <div class="sessions-intro">
         <h2 id="sessions-title">Start with the amount of time you want.</h2>
-        <p>You do not need to choose between deep tissue, Swedish massage, sports massage, or cupping when you book. Tell Sage what has been going on, and he will talk through what makes sense for the session.</p>
+        <p>You do not need to choose between deep tissue, Swedish massage, sports massage, or cupping before you schedule. Tell Sage what has been going on, and he will talk through what makes sense for the session.</p>
       </div>
 
       <div class="session-choices" aria-label="Session lengths">
@@ -58,13 +60,13 @@
           <h3>60 minutes</h3>
           <p class="session-price">$120</p>
           <p>Enough time for a full-body massage or more focused work on one or two areas.</p>
-          <a href="#book">Book 60 minutes</a>
+          <a href="#schedule">Talk with Sage</a>
         </article>
         <article>
           <h3>90 minutes</h3>
           <p class="session-price">$175</p>
           <p>More room to work slowly, spend time on several areas, or support recovery after training and activity.</p>
-          <a href="#book">Book 90 minutes</a>
+          <a href="#schedule">Talk with Sage</a>
         </article>
       </div>
 
@@ -127,24 +129,38 @@
     <section class="testimonial" aria-label="Client testimonial">
       <figure>
         <blockquote>
-          <p>“Sage is very calming, and I felt that he connected with my body immediately. Before I was even on the table. I could tell that he had connected not only with my body, but also was attuned to my emotions. Additionally, I came to Sage with a specific issue, and after a few sessions, found significant relief.”</p>
+          <p>“Sage is very calming, and I felt that he connected with my body immediately—before I was even on the table. I could tell that he had connected not only with my body, but was also attuned to my emotions. Additionally, I came to Sage with a specific issue and, after a few sessions, found significant relief.”</p>
         </blockquote>
         <figcaption>— George Dyer, Nevada County</figcaption>
       </figure>
     </section>
 
-    <section class="book" id="book" aria-labelledby="book-title">
-      <img class="section-plant book-plant" src="book-botanical.png" alt="" aria-hidden="true">
-      <h2 id="book-title">Schedule a private session.</h2>
+    <section class="schedule" id="schedule" aria-labelledby="schedule-title">
+      <img class="section-plant schedule-plant" src="book-botanical.png" alt="" aria-hidden="true">
+      <h2 id="schedule-title">Talk with Sage and schedule your session.</h2>
       <div>
-        <p>Choose a 60-minute session for $120 or a 90-minute session for $175. Available times appear in Sage’s Google booking calendar.</p>
-        <ul class="booking-facts" aria-label="Booking details">
-          <li>Private, in-home sessions</li>
-          <li>Table, linens, and equipment supplied</li>
-          <li>Deep tissue, Swedish, sports massage, and cupping available</li>
+        <p>Choose a time for a phone or video conversation with Sage. You can share what you’re looking for, ask questions, and talk through whether a 60- or 90-minute in-home massage session is the right fit.</p>
+        <ul class="schedule-facts" aria-label="Scheduling details">
+          <li>15-minute phone or video consultation</li>
+          <li>Private, in-home massage in Santa Barbara, Montecito, and Goleta</li>
+          <li>60 minutes — $120 · 90 minutes — $175</li>
         </ul>
-        <!-- Replace this empty destination with Sage's Google booking link after the website is approved. -->
-        <a href="#" class="primary-action primary-action--light">See available times</a>
+        <div class="google-schedule-button">
+          <script>
+            (function () {
+              var target = document.currentScript;
+              window.addEventListener('load', function () {
+                calendar.schedulingButton.load({
+                  url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2CqpMok3QkUiuTdpodvoKJqf80sXhiZivLbm6tkbH-0_CENmajN16k747cKhJuBzRbTioqWAox',
+                  color: '#FBF8F1',
+                  label: 'Talk with Sage & schedule your session',
+                  target: target
+                });
+              });
+            })();
+          </script>
+          <noscript><a href="https://calendar.app.google/KKzkQZZM9ShYJGsh9" class="primary-action primary-action--light">Talk with Sage &amp; schedule your session</a></noscript>
+        </div>
       </div>
     </section>
   </main>
@@ -154,7 +170,7 @@
       <img class="footer-logo" src="sage-bear-logo-reverse.png" alt="">
       <span>Sage Bear Massage</span>
     </div>
-    <span>Santa Barbara, California</span>
+    <span>Santa Barbara · Montecito · Goleta</span>
   </footer>
 </body>
 </html>
