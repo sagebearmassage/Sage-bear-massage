@@ -87,7 +87,7 @@ img { max-width: 100%; }
 .location { margin-top: 24px; display: block; color: var(--quiet); font-family: var(--serif); font-size: .92rem; }
 
 .home-session, .sessions, .sage { position: relative; isolation: isolate; overflow: hidden; }
-.schedule { position: relative; isolation: auto; overflow: visible; }
+.schedule { position: relative; isolation: isolate; overflow: hidden; }
 .home-session > :not(.section-plant),
 .sessions > :not(.section-plant),
 .sage > :not(.section-plant),
@@ -139,19 +139,20 @@ img { max-width: 100%; }
 .sage-bio { max-width: 1040px; margin-top: clamp(46px, 6vw, 70px); column-count: 2; column-gap: clamp(42px, 7vw, 90px); }
 .sage-bio > p { margin: 0 0 22px; color: var(--quiet); font-family: var(--serif); font-size: 1.1rem; line-height: 1.72; }
 .sage-bio strong { color: var(--ink); font-weight: 600; }
-.testimonial { padding: clamp(74px, 9vw, 122px) clamp(22px, 8vw, 130px); background: var(--paper); }
-.testimonial figure { max-width: 980px; margin: 0; }
-.testimonial blockquote { max-width: 900px; margin: 0; color: var(--moss); font-family: var(--serif); font-size: clamp(1.55rem, 2.25vw, 2.45rem); line-height: 1.42; letter-spacing: -.018em; }
+.testimonial { padding: clamp(62px, 7vw, 92px) clamp(22px, 8vw, 130px); background: var(--paper); }
+.testimonial h2 { margin: 0 0 26px; color: var(--ink); font-family: var(--sans); font-size: clamp(1.5rem, 2vw, 2rem); font-weight: 600; letter-spacing: -.03em; }
+.testimonial figure { max-width: 790px; margin: 0; }
+.testimonial blockquote { max-width: 760px; margin: 0; color: var(--moss); font-family: var(--serif); font-size: clamp(1.28rem, 1.7vw, 1.75rem); line-height: 1.5; letter-spacing: -.012em; }
 .testimonial blockquote p { margin: 0; }
-.testimonial figcaption { margin-top: 27px; color: var(--clay); font-size: .8rem; font-weight: 700; }
-.schedule { padding: clamp(72px, 9vw, 118px) clamp(22px, 8vw, 130px) clamp(235px, 18vw, 285px); display: grid; grid-template-columns: minmax(0, .85fr) minmax(300px, .55fr); gap: clamp(44px, 10vw, 160px); align-items: center; background: var(--moss); color: var(--cream); }
+.testimonial figcaption { margin-top: 22px; color: var(--clay); font-size: .78rem; font-weight: 700; }
+.schedule { padding: clamp(72px, 9vw, 118px) clamp(22px, 8vw, 130px) clamp(330px, 25vw, 375px); display: grid; grid-template-columns: minmax(0, .85fr) minmax(300px, .55fr); gap: clamp(44px, 10vw, 160px); align-items: start; background: linear-gradient(180deg, var(--cream) 0%, var(--cream) calc(100% - 245px), var(--moss) calc(100% - 245px), var(--moss) 100%); color: var(--ink); }
 .schedule h2 { max-width: 650px; font-size: clamp(2.35rem, 4vw, 4.7rem); line-height: 1.05; }
-.schedule > div { max-width: 490px; }
-.schedule p { margin: 0; color: rgba(251, 248, 241, .8); font-family: var(--serif); font-size: 1.12rem; line-height: 1.58; }
-.schedule-facts { margin: 22px 0 0; padding: 0; list-style: none; color: rgba(251, 248, 241, .7); font-size: .78rem; line-height: 1.65; }
+.schedule-copy { max-width: 490px; }
+.schedule p { margin: 0; color: var(--quiet); font-family: var(--serif); font-size: 1.08rem; line-height: 1.58; }
+.schedule-facts { margin: 22px 0 0; padding: 0; list-style: none; color: var(--quiet); font-size: .78rem; line-height: 1.65; }
 .schedule-facts li { margin-top: 6px; }
 .google-schedule-button { min-height: 50px; margin-top: 28px; }
-.schedule-plant { z-index: 1; left: -72px; bottom: -96px; width: clamp(660px, 78vw, 900px); max-width: none; height: auto; opacity: .78; filter: saturate(1.06); }
+.schedule-plant { z-index: 1; left: -40px; bottom: -180px; width: clamp(560px, 62vw, 760px); max-width: none; height: auto; opacity: .82; filter: saturate(1.06); }
 .primary-action--light { background: var(--cream); color: var(--moss); }
 footer { position: relative; min-height: 96px; padding: 24px clamp(22px, 4vw, 62px) 33px; display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; overflow: visible; background: var(--moss); color: rgba(251, 248, 241, .62); font-size: .7rem; }
 footer > * { position: relative; z-index: 3; }
@@ -175,12 +176,12 @@ footer > * { position: relative; z-index: 3; }
   .brand-logo { width: 44px; height: 44px; }
   .topbar nav a:not(:last-child) { display: none; }
   .hero { min-height: calc(100svh - 70px); padding: 86px 22px 72px; }
-  .hero-table { object-position: 67% 58%; filter: blur(5px) saturate(.62) contrast(.9); opacity: .84; }
-  .hero::after { background: linear-gradient(180deg, rgba(243, 239, 231, .66) 0%, rgba(243, 239, 231, .54) 68%, rgba(243, 239, 231, .38) 100%); }
+  .hero-table { object-position: 64% 60%; filter: blur(1.5px) saturate(.72) contrast(.96); opacity: .96; transform: scale(1.02); }
+  .hero::after { background: linear-gradient(180deg, rgba(243, 239, 231, .54) 0%, rgba(243, 239, 231, .42) 68%, rgba(243, 239, 231, .24) 100%); }
   .hero-copy { width: min(82vw, 480px); margin: 0 auto; }
   .hero-plant { height: 44%; }
-  .hero-plant--left { left: -52%; bottom: -4%; opacity: .34; }
-  .hero-plant--right { right: -52%; top: -5%; opacity: .3; }
+  .hero-plant--left { left: -52%; bottom: -4%; opacity: .2; }
+  .hero-plant--right { right: -52%; top: -5%; opacity: .18; }
   .hero h1 { font-size: clamp(2.9rem, 13vw, 4.15rem); }
   .hero-copy > p { margin-top: 23px; font-size: .96rem; }
   .home-session { padding-left: 22px; padding-right: 22px; }
@@ -199,9 +200,10 @@ footer > * { position: relative; z-index: 3; }
   .sage-photo { width: min(82vw, 330px); margin-top: 34px; }
   .sage-bio { column-count: 1; margin-top: 40px; }
   .sage-bio > p { font-size: 1.04rem; }
-  .testimonial blockquote { font-size: 1.42rem; line-height: 1.48; }
-  .schedule { padding-bottom: 230px; }
+  .testimonial h2 { margin-bottom: 22px; }
+  .testimonial blockquote { font-size: 1.2rem; line-height: 1.52; }
+  .schedule { padding-bottom: 350px; background: linear-gradient(180deg, var(--cream) 0%, var(--cream) calc(100% - 260px), var(--moss) calc(100% - 260px), var(--moss) 100%); }
   footer { min-height: 138px; flex-direction: column; align-items: flex-start; }
   .footer-logo { width: 48px; height: 48px; }
-  .schedule-plant { left: -105px; bottom: -138px; width: 620px; opacity: .74; }
+  .schedule-plant { left: -92px; bottom: -150px; width: 560px; opacity: .78; }
 }
