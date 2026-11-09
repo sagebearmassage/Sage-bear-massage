@@ -151,6 +151,7 @@ img { max-width: 100%; }
 .schedule-facts li { margin-top: 6px; }
 .schedule-action { margin-top: 26px; }
 .google-schedule-button { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.hur54b .mmGMM { background: #fff !important; }
 .botanical-footer { position: relative; height: clamp(245px, 28vw, 360px); overflow: hidden; background: var(--moss); }
 .botanical-footer img { position: absolute; left: clamp(-92px, -5vw, -42px); bottom: clamp(-180px, -12vw, -125px); width: clamp(560px, 62vw, 780px); max-width: none; height: auto; opacity: .82; filter: saturate(1.06); }
 .primary-action--light { background: var(--cream); color: var(--moss); }
