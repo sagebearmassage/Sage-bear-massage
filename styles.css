@@ -158,6 +158,7 @@ img { max-width: 100%; }
 .testimonial { padding: clamp(52px, 6vw, 76px) clamp(22px, 8vw, 130px); background: var(--paper); }
 .testimonial h2 { margin: 0 0 20px; color: var(--ink); font-family: var(--sans); font-size: clamp(1.2rem, 1.5vw, 1.45rem); font-weight: 600; letter-spacing: -.025em; }
 .testimonial figure { max-width: 700px; margin: 0; }
+.testimonial figure + figure { margin-top: clamp(38px, 5vw, 58px); margin-left: clamp(0px, 10vw, 150px); }
 .testimonial blockquote { max-width: 680px; margin: 0; color: var(--moss); font-family: var(--serif); font-size: clamp(1.08rem, 1.3vw, 1.35rem); line-height: 1.58; letter-spacing: -.006em; }
 .testimonial blockquote p { margin: 0; }
 .testimonial figcaption { margin-top: 22px; color: var(--clay); font-size: .78rem; font-weight: 700; }
@@ -170,10 +171,62 @@ img { max-width: 100%; }
 .schedule-action { margin-top: 26px; }
 .google-schedule-button { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .hur54b .mmGMM { background: #fff !important; }
-.botanical-footer { position: relative; height: clamp(285px, 31vw, 410px); overflow: hidden; background: linear-gradient(180deg, var(--cream) 0%, #e8e5db 14%, #7a8575 46%, var(--moss) 82%); }
-.botanical-footer img { position: absolute; left: clamp(-125px, -6vw, -55px); bottom: clamp(-235px, -14vw, -165px); width: clamp(690px, 72vw, 920px); max-width: none; height: auto; opacity: .88; filter: saturate(1.08); }
+.site-ending {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--cream) 0%, #ebe8df 11%, #9aa292 39%, #536050 68%, var(--moss) 86%);
+}
+.botanical-border {
+  position: relative;
+  z-index: 1;
+  height: clamp(350px, 38vw, 520px);
+  width: 100%;
+  pointer-events: none;
+}
+.botanical-border::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: clamp(92px, 10vw, 140px);
+  pointer-events: none;
+  background: linear-gradient(180deg, var(--cream) 0%, rgba(251, 248, 241, .78) 38%, rgba(251, 248, 241, 0) 100%);
+}
+.botanical-border img {
+  position: absolute;
+  max-width: none;
+  height: auto;
+  user-select: none;
+  pointer-events: none;
+  filter: saturate(1.08);
+}
+.botanical-border__main {
+  z-index: 2;
+  left: 50%;
+  bottom: clamp(-155px, -9vw, -105px);
+  width: clamp(760px, 76vw, 1040px);
+  opacity: .94;
+  transform: translateX(-50%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 100%);
+}
+.botanical-border__left,
+.botanical-border__right {
+  z-index: 1;
+  bottom: clamp(-300px, -19vw, -210px);
+  height: clamp(570px, 59vw, 760px);
+  width: auto;
+  opacity: .5;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 100%);
+}
+.botanical-border__left { left: clamp(-230px, -13vw, -150px); }
+.botanical-border__right { right: clamp(-230px, -13vw, -150px); }
 .primary-action--light { background: var(--cream); color: var(--moss); }
-footer { position: relative; min-height: 96px; padding: 24px clamp(22px, 4vw, 62px) 33px; display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; overflow: visible; background: var(--moss); color: rgba(251, 248, 241, .62); font-size: .7rem; }
+footer { position: relative; z-index: 3; min-height: 112px; margin-top: -1px; padding: 28px clamp(22px, 4vw, 62px) 33px; display: flex; justify-content: space-between; align-items: flex-end; gap: 18px; overflow: visible; background: transparent; color: rgba(251, 248, 241, .72); font-size: .7rem; }
 footer > * { position: relative; z-index: 3; }
 .footer-brand { display: inline-flex; align-items: center; gap: 10px; }
 .footer-logo { width: 52px; height: 52px; display: block; object-fit: contain; }
@@ -198,9 +251,9 @@ footer > * { position: relative; z-index: 3; }
   .hero-table { object-position: 64% 60%; filter: blur(1.5px) saturate(.72) contrast(.96); opacity: .96; transform: scale(1.02); }
   .hero::after { background: linear-gradient(180deg, rgba(243, 239, 231, .86) 0%, rgba(243, 239, 231, .78) 62%, rgba(243, 239, 231, .64) 100%); }
   .hero-copy { width: 100%; max-width: 480px; margin: 0 auto; }
-  .hero-plant { height: 44%; }
-  .hero-plant--left { left: -52%; bottom: -4%; opacity: .2; }
-  .hero-plant--right { right: -52%; top: -5%; opacity: .18; }
+  .hero-plant { height: 58%; filter: saturate(.9); }
+  .hero-plant--left { left: -36%; bottom: -7%; opacity: .4; }
+  .hero-plant--right { right: -36%; top: -4%; opacity: .36; }
   .hero h1 { max-width: 100%; font-size: clamp(2.75rem, 12.5vw, 4.15rem); line-height: 1; }
   .hero-copy > p { margin-top: 23px; max-width: 100%; font-size: .96rem; line-height: 1.65; }
   .location { color: #454b43; }
@@ -228,13 +281,19 @@ footer > * { position: relative; z-index: 3; }
   .sage-bio > p { font-size: 1.04rem; }
   .testimonial { padding-top: 48px; padding-bottom: 52px; }
   .testimonial h2 { margin-bottom: 16px; font-size: 1.16rem; }
+  .testimonial figure + figure { margin-top: 38px; margin-left: 0; }
   .testimonial blockquote { font-size: 1.02rem; line-height: 1.6; }
   .testimonial figcaption { margin-top: 18px; }
   .schedule { padding-top: 62px; padding-bottom: 70px; }
   .schedule h2 { max-width: 100%; font-size: 2.1rem; line-height: 1.1; }
   .schedule-action { width: 100%; max-width: 260px; margin-top: 24px; }
-  .botanical-footer { height: 330px; }
-  .botanical-footer img { left: -112px; bottom: -220px; width: 720px; opacity: .88; }
-  footer { min-height: 138px; flex-direction: column; align-items: flex-start; }
+  .site-ending { background: linear-gradient(180deg, var(--cream) 0%, #e7e5db 12%, #899383 40%, #4e5a4c 68%, var(--moss) 86%); }
+  .botanical-border { height: 390px; }
+  .botanical-border__main { bottom: -92px; width: 650px; opacity: .96; }
+  .botanical-border__left,
+  .botanical-border__right { bottom: -170px; height: 520px; opacity: .42; }
+  .botanical-border__left { left: -235px; }
+  .botanical-border__right { right: -235px; }
+  footer { min-height: 148px; padding-top: 18px; flex-direction: column; align-items: flex-start; }
   .footer-logo { width: 48px; height: 48px; }
 }
